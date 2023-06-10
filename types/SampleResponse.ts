@@ -1,102 +1,69 @@
 export interface SampleResponse {
-    data: Data;
-    meta: Meta;
-}
-interface Data {
-    id: number;
-    attributes: Attributes;
+  player: Player[];
 }
 
-interface Attributes {
-    title: string;
-    body: string;
-    createdAt: string;
-    updatedAt: string;
-    publishedAt: string;
-    image: Image;
+export interface Player {
+  idPlayer: string;
+  idTeam: string;
+  idTeam2: string;
+  idTeamNational: any;
+  idSoccerXML: string;
+  idAPIfootball: string;
+  idPlayerManager: string;
+  idWikidata: any;
+  strNationality: string;
+  strPlayer: string;
+  strPlayerAlternate: string;
+  strTeam: string;
+  strTeam2: string;
+  strSport: string;
+  intSoccerXMLTeamID: string;
+  dateBorn: string;
+  strNumber: string;
+  dateSigned: string;
+  strSigning: string;
+  strWage: string;
+  strOutfitter: string;
+  strKit: string;
+  strAgent: string;
+  strBirthLocation: string;
+  strEthnicity: string;
+  strStatus: string;
+  strDescriptionEN: string;
+  strDescriptionDE: string;
+  strDescriptionFR: string;
+  strDescriptionCN: any;
+  strDescriptionIT: string;
+  strDescriptionJP: any;
+  strDescriptionRU: string;
+  strDescriptionES: string;
+  strDescriptionPT: any;
+  strDescriptionSE: any;
+  strDescriptionNL: any;
+  strDescriptionHU: any;
+  strDescriptionNO: any;
+  strDescriptionIL: any;
+  strDescriptionPL: any;
+  strGender: string;
+  strSide: string;
+  strPosition: string;
+  strCollege: any;
+  strFacebook: string;
+  strWebsite: string;
+  strTwitter: string;
+  strInstagram: string;
+  strYoutube: string;
+  strHeight: string;
+  strWeight: string;
+  intLoved: string;
+  strThumb: string;
+  strCutout: string;
+  strRender: string;
+  strBanner: string;
+  strFanart1: string;
+  strFanart2: string;
+  strFanart3: string;
+  strFanart4: string;
+  strCreativeCommons: string;
+  strLocked: string;
 }
-
-interface Image {
-    data: Data2;
-}
-
-interface Data2 {
-    id: number;
-    attributes: Attributes2;
-}
-
-interface Attributes2 {
-    name: string;
-    alternativeText: any;
-    caption: any;
-    width: number;
-    height: number;
-    formats: Formats;
-    hash: string;
-    ext: string;
-    mime: string;
-    size: number;
-    url: string;
-    previewUrl: any;
-    provider: string;
-    provider_metadata: any;
-    createdAt: string;
-    updatedAt: string;
-}
-
-interface Formats {
-    large: Large;
-    small: Small;
-    medium: Medium;
-    thumbnail: Thumbnail;
-}
-
-interface Large {
-    ext: string;
-    url: string;
-    hash: string;
-    mime: string;
-    name: string;
-    path: any;
-    size: number;
-    width: number;
-    height: number;
-}
-
-interface Small {
-    ext: string;
-    url: string;
-    hash: string;
-    mime: string;
-    name: string;
-    path: any;
-    size: number;
-    width: number;
-    height: number;
-}
-
-interface Medium {
-    ext: string;
-    url: string;
-    hash: string;
-    mime: string;
-    name: string;
-    path: any;
-    size: number;
-    width: number;
-    height: number;
-}
-
-interface Thumbnail {
-    ext: string;
-    url: string;
-    hash: string;
-    mime: string;
-    name: string;
-    path: any;
-    size: number;
-    width: number;
-    height: number;
-}
-
-export interface Meta {}
